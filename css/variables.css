@@ -1,0 +1,16 @@
+:root{
+  --bg:#08070d;--bg2:#100e1a;--bg3:#171426;
+  --surface:rgba(255,255,255,.055);--surface2:rgba(255,255,255,.09);--surface3:rgba(255,255,255,.14);
+  --line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.18);
+  --text:#f5f3fb;--muted:#b4b0c8;--faint:#9591ad;
+  --accent:#a56bff;--accent2:#ff5fd2;--accent-rgb:165,107,255;--accent2-rgb:255,95,210;--accent-ink:#0c0716;
+  --ok:#3ddc97;--warn:#ffb020;--danger:#ff5470;--gold:#f5c451;
+  --r-sm:12px;--r:20px;--r-lg:28px;--r-pill:999px;
+  --nav-h:68px;--safe-b:env(safe-area-inset-bottom,0px);--safe-t:env(safe-area-inset-top,0px);
+  --font:"Avenir Next","Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);--spring:cubic-bezier(.34,1.56,.64,1);
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --glass:rgba(20,17,32,.72);
+  --accent-t:color-mix(in srgb,var(--accent) 78%,#fff);--gold-t:#f5c451;--ok-t:#3ddc97;--danger-t:#ff8095;--warn-t:#ffb020;--info-t:#7fbcff;
+}

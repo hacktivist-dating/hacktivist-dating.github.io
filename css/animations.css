@@ -1,0 +1,30 @@
+@keyframes pageIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}
+@keyframes sheetIn{from{transform:translateY(100%)}to{transform:none}}@keyframes sheetOut{to{transform:translateY(100%)}}
+@keyframes toastIn{from{opacity:0;transform:translateY(-16px) scale(.9)}to{opacity:1;transform:none}}@keyframes toastOut{to{opacity:0;transform:translateY(-10px) scale(.95)}}
+@keyframes trayIn{from{opacity:0;transform:translate(-50%,16px) scale(.85)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes speak{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.09);opacity:1}}
+@keyframes livepulse{70%{box-shadow:0 0 0 8px rgba(255,84,112,0)}100%{box-shadow:0 0 0 0 rgba(255,84,112,0)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes typing{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}
+@keyframes floatUp{0%{opacity:0;transform:translate(0,0) scale(.5)}12%{opacity:1;transform:translate(0,-40px) scale(1.15)}100%{opacity:0;transform:translate(var(--dx,0),-62vh) scale(1) rotate(var(--rot,0deg))}}
+@keyframes enter{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes crownIn{0%{opacity:0;transform:translateY(-120px) scale(.3) rotate(-12deg)}55%{opacity:1;transform:translateY(0) scale(1.25) rotate(4deg)}75%{transform:scale(1) rotate(-2deg)}100%{opacity:0;transform:scale(1.5) translateY(-30px)}}
+@keyframes rocketFly{0%{transform:translate(-30vw,45vh) rotate(-32deg) scale(.8);opacity:0}10%{opacity:1}100%{transform:translate(130vw,-70vh) rotate(-32deg) scale(1.5);opacity:1}}
+@keyframes castleRise{0%{transform:translateY(60vh) scale(.4);opacity:0}45%{transform:translateY(0) scale(1.3);opacity:1}80%{transform:translateY(0) scale(1.2);opacity:1}100%{transform:translateY(-10vh) scale(1.3);opacity:0}}
+@keyframes roar{0%{transform:scale(.2);opacity:0}30%{transform:scale(1.5);opacity:1}40%{transform:scale(1.4) rotate(-6deg)}50%{transform:scale(1.5) rotate(6deg)}60%{transform:scale(1.4) rotate(-4deg)}100%{transform:scale(1.7);opacity:0}}
+@keyframes shine{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes ripple{from{transform:scale(.4);opacity:.9}to{transform:scale(2.4);opacity:0}}
+@keyframes levelUp{0%{transform:scale(.3);opacity:0}60%{transform:scale(1.15);opacity:1}100%{transform:scale(1)}}
+.shimmer{background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);background-size:200% 100%;animation:shine 2.2s infinite}
+.pop{animation:levelUp .6s var(--spring) both}
+.fxbig{font-size:min(38vw,190px);filter:drop-shadow(0 0 40px rgba(245,196,81,.9));will-change:transform}
+.fxbig.crown{animation:crownIn 2.6s ease both}.fxbig.castle{animation:castleRise 3s ease both}.fxbig.lion{animation:roar 2.4s ease both}
+.fxrocket{position:fixed;left:0;top:0;font-size:min(30vw,150px);animation:rocketFly 2.4s cubic-bezier(.5,0,.8,.5) both;filter:drop-shadow(0 0 30px rgba(255,140,60,.9))}
+.fxrocket::after{content:"";position:absolute;left:-90px;top:60%;width:120px;height:14px;border-radius:8px;background:linear-gradient(90deg,transparent,rgba(255,180,80,.9));filter:blur(6px);transform:rotate(-8deg)}
+.fxlabel{position:fixed;left:50%;bottom:30%;transform:translateX(-50%);padding:9px 20px;border-radius:var(--r-pill);background:var(--glass);border:1px solid var(--line2);font-weight:700;animation:pageIn .4s both;backdrop-filter:blur(14px);white-space:nowrap}
+[data-motion=reduce] *,[data-motion=reduce] *::before,[data-motion=reduce] *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+@media (prefers-reduced-motion:reduce){
+  :root:not([data-motion=full]) *,:root:not([data-motion=full]) *::before,:root:not([data-motion=full]) *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}

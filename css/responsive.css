@@ -1,0 +1,34 @@
+@media (min-width:600px){
+  .page{max-width:720px}
+  .grid-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .scrim{align-items:center}
+  .sheet{border-radius:var(--r-lg);border-bottom:1px solid var(--line2);max-height:84dvh}
+  .rc{width:280px}
+  .gifts{grid-template-columns:repeat(5,1fr)}
+}
+@media (min-width:900px){
+  #view{margin-left:250px;padding-bottom:40px}
+  #view.no-nav{padding-bottom:40px}
+  .page{max-width:1000px;padding:0 32px}
+  .topbar{margin:0 -32px;padding:0 32px}
+  .hscroll{margin:0 -32px;padding:2px 32px 6px}
+  .grid-rooms{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .bottomnav{display:none}
+  .demo-pill{bottom:14px;left:calc(50% + 125px)}
+  .sidebar{display:flex;flex-direction:column;gap:4px;position:fixed;left:0;top:0;bottom:0;width:250px;padding:22px 14px;z-index:30;background:var(--glass);border-right:1px solid var(--line);backdrop-filter:blur(22px);overflow-y:auto}
+  .sidebar .logo{padding:0 10px 18px}
+  .sidebar .sb-item{display:flex;align-items:center;gap:13px;height:46px;padding:0 14px;border-radius:14px;color:var(--muted);font-weight:600;transition:all .2s;text-align:left;position:relative}
+  .sidebar .sb-item:hover{background:var(--surface);color:var(--text)}
+  .sidebar .sb-item.on{background:rgba(var(--accent-rgb),.18);color:var(--text)}
+  .sidebar .sb-item.on .ic{color:var(--accent-t)}
+  .sidebar .sb-item .n{margin-left:auto;min-width:20px;height:20px;padding:0 6px;border-radius:10px;background:var(--danger);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
+  .sidebar .sb-sep{height:1px;background:var(--line);margin:10px 8px}
+  .sidebar .btn{margin-top:auto}
+  .room-inner{border-left:1px solid var(--line);border-right:1px solid var(--line);background:rgba(8,7,13,.35)}
+  .stage{gap:22px 10px}
+  .gifts{grid-template-columns:repeat(5,1fr)}
+}
+@media (min-width:1400px){.page{max-width:1160px}.grid-rooms{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:360px){.stage{gap:12px 2px}.ctrl button{font-size:9.5px}.ctrl .cb{width:44px;height:44px}.gifts{grid-template-columns:repeat(3,1fr)}}
+@media (max-height:640px) and (max-width:899px){.feed{max-height:80px}}
+@media (min-width:900px){.hscroll{scroll-padding:0 32px}}

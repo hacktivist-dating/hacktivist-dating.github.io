@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hacktivist Dating</title>
+<meta name="description" content="Hacktivist Dating — a frontend-only social voice-room demo. Talk live. Match on ideas.">
+<meta name="theme-color" content="#08070d">
+<meta name="color-scheme" content="dark light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hacktivist Dating">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<div id="splash" class="splash" role="status" aria-label="Loading"><div class="prompt"><span style="color:var(--accent)">&gt;</span> <span class="typed"></span><span class="caret"></span></div></div>
+<div id="app"><main id="view" tabindex="-1"></main></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="modal-root"></div>
+<div id="toast-root" aria-live="polite"></div>
+<noscript><p style="padding:24px;color:#fff">Hacktivist Dating needs JavaScript enabled.</p></noscript>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/state.js"></script>
+<script src="js/demo-data.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/audioAdapter.js"></script>
+<script src="js/webrtcAdapter.js"></script>
+<script src="js/notificationAdapter.js"></script>
+<script src="js/authAdapter.js"></script>
+<script src="js/messageAdapter.js"></script>
+<script src="js/giftAdapter.js"></script>
+<script src="js/roomAdapter.js"></script>
+<script src="js/router.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/screens-main.js"></script>
+<script src="js/screens-room.js"></script>
+<script src="js/screens-social.js"></script>
+<script src="js/screens-misc.js"></script>
+<script src="js/features-match.js"></script>
+<script src="js/features-events.js"></script>
+<script src="js/features-vip.js"></script>
+<script src="js/features-store.js"></script>
+<script src="js/features-room.js"></script>
+<script src="js/features-gifts.js"></script>
+<script src="js/features-games.js"></script>
+<script src="js/features-moments.js"></script>
+<script src="js/features-bonds.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

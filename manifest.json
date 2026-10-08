@@ -1,0 +1,22 @@
+{
+  "name": "Hacktivist Dating",
+  "short_name": "Hacktivist",
+  "description": "Frontend-only social voice-room demo. Talk live. Match on ideas.",
+  "start_url": "./index.html#home",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#08070d",
+  "theme_color": "#08070d",
+  "categories": ["social"],
+  "icons": [
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Voice rooms", "url": "./index.html#rooms" },
+    { "name": "Daily rewards", "url": "./index.html#rewards" }
+  ]
+}
